@@ -1,0 +1,322 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Dec 15 15:38:58 2020
+# Process ID: 1808
+# Current directory: C:/Users/danny/CPE487/Blackjack/Blackjack.runs/synth_1
+# Command line: vivado.exe -log BlackJack.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BlackJack.tcl
+# Log file: C:/Users/danny/CPE487/Blackjack/Blackjack.runs/synth_1/BlackJack.vds
+# Journal file: C:/Users/danny/CPE487/Blackjack/Blackjack.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source BlackJack.tcl -notrace
+Command: synth_design -top BlackJack -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11372
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1029.355 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'BlackJack' [C:/Users/danny/BlackJack-VHDL/BlackJack.vhd:45]
+	Parameter width_cont bound to: 6 - type: integer 
+	Parameter width_reg_zero bound to: 1 - type: integer 
+	Parameter width_reg_perd bound to: 1 - type: integer 
+	Parameter width_reg_acc bound to: 5 - type: integer 
+	Parameter width_RAM bound to: 4 - type: integer 
+	Parameter width_sum bound to: 5 - type: integer 
+	Parameter width_disp bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'DataPath' declared at 'C:/Users/danny/BlackJack-VHDL/DataPath.vhd:29' bound to instance 'DATAPATHH' of component 'DataPath' [C:/Users/danny/BlackJack-VHDL/BlackJack.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'DataPath' [C:/Users/danny/BlackJack-VHDL/DataPath.vhd:45]
+	Parameter width_cont bound to: 6 - type: integer 
+	Parameter width_reg_zero bound to: 1 - type: integer 
+	Parameter width_reg_perd bound to: 1 - type: integer 
+	Parameter width_reg_acc bound to: 5 - type: integer 
+	Parameter width_RAM bound to: 4 - type: integer 
+	Parameter width_sum bound to: 5 - type: integer 
+	Parameter width_disp bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'ram_memory' declared at 'C:/Users/danny/BlackJack-VHDL/RAM64.vhd:29' bound to instance 'RAM' of component 'ram_memory' [C:/Users/danny/BlackJack-VHDL/DataPath.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'ram_memory' [C:/Users/danny/BlackJack-VHDL/RAM64.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'ram_memory' (1#1) [C:/Users/danny/BlackJack-VHDL/RAM64.vhd:37]
+	Parameter width bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'ContMODn' declared at 'C:/Users/danny/BlackJack-VHDL/ContMODn.vhd:29' bound to instance 'CONTADOR' of component 'ContModn' [C:/Users/danny/BlackJack-VHDL/DataPath.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'ContMODn' [C:/Users/danny/BlackJack-VHDL/ContMODn.vhd:38]
+	Parameter width bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ContMODn' (2#1) [C:/Users/danny/BlackJack-VHDL/ContMODn.vhd:38]
+INFO: [Synth 8-3491] module 'Conv_7seg' declared at 'C:/Users/danny/BlackJack-VHDL/Conv_7seg.vhd:23' bound to instance 'CONV_ACC_1' of component 'Conv_7seg' [C:/Users/danny/BlackJack-VHDL/DataPath.vhd:157]
+INFO: [Synth 8-638] synthesizing module 'Conv_7seg' [C:/Users/danny/BlackJack-VHDL/Conv_7seg.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'Conv_7seg' (3#1) [C:/Users/danny/BlackJack-VHDL/Conv_7seg.vhd:28]
+INFO: [Synth 8-3491] module 'Conv_7seg' declared at 'C:/Users/danny/BlackJack-VHDL/Conv_7seg.vhd:23' bound to instance 'CONV_ACC_2' of component 'Conv_7seg' [C:/Users/danny/BlackJack-VHDL/DataPath.vhd:161]
+INFO: [Synth 8-3491] module 'Conv_7seg' declared at 'C:/Users/danny/BlackJack-VHDL/Conv_7seg.vhd:23' bound to instance 'CONV_CARTA' of component 'Conv_7seg' [C:/Users/danny/BlackJack-VHDL/DataPath.vhd:165]
+	Parameter width bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/danny/BlackJack-VHDL/AdderN.vhd:29' bound to instance 'SUMADOR' of component 'adder' [C:/Users/danny/BlackJack-VHDL/DataPath.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'adder' [C:/Users/danny/BlackJack-VHDL/AdderN.vhd:37]
+	Parameter width bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adder' (4#1) [C:/Users/danny/BlackJack-VHDL/AdderN.vhd:37]
+	Parameter width bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'RegPG' declared at 'C:/Users/danny/BlackJack-VHDL/RegPG.vhd:29' bound to instance 'ACC_REGISTER' of component 'RegPG' [C:/Users/danny/BlackJack-VHDL/DataPath.vhd:174]
+INFO: [Synth 8-638] synthesizing module 'RegPG' [C:/Users/danny/BlackJack-VHDL/RegPG.vhd:38]
+	Parameter width bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegPG' (5#1) [C:/Users/danny/BlackJack-VHDL/RegPG.vhd:38]
+	Parameter width bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'RegPG1' declared at 'C:/Users/danny/BlackJack-VHDL/reg1.vhd:29' bound to instance 'ZERO_REGISTER' of component 'RegPG1' [C:/Users/danny/BlackJack-VHDL/DataPath.vhd:181]
+INFO: [Synth 8-638] synthesizing module 'RegPG1' [C:/Users/danny/BlackJack-VHDL/reg1.vhd:38]
+	Parameter width bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegPG1' (6#1) [C:/Users/danny/BlackJack-VHDL/reg1.vhd:38]
+	Parameter width bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'RegPG1' declared at 'C:/Users/danny/BlackJack-VHDL/reg1.vhd:29' bound to instance 'PERDIDO_REGISTER' of component 'RegPG1' [C:/Users/danny/BlackJack-VHDL/DataPath.vhd:188]
+INFO: [Synth 8-256] done synthesizing module 'DataPath' (7#1) [C:/Users/danny/BlackJack-VHDL/DataPath.vhd:45]
+INFO: [Synth 8-3491] module 'ControlUnit' declared at 'C:/Users/danny/BlackJack-VHDL/ControlUnit.vhd:29' bound to instance 'CONTROL_UNIT' of component 'ControlUnit' [C:/Users/danny/BlackJack-VHDL/BlackJack.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'ControlUnit' [C:/Users/danny/BlackJack-VHDL/ControlUnit.vhd:42]
+INFO: [Synth 8-226] default block is never used [C:/Users/danny/BlackJack-VHDL/ControlUnit.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'ControlUnit' (8#1) [C:/Users/danny/BlackJack-VHDL/ControlUnit.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'BlackJack' (9#1) [C:/Users/danny/BlackJack-VHDL/BlackJack.vhd:45]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1029.355 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1029.355 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1029.355 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1029.355 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/danny/CPE487/Blackjack/Blackjack.srcs/constrs_1/new/blackjack.xdc]
+Finished Parsing XDC File [C:/Users/danny/CPE487/Blackjack/Blackjack.srcs/constrs_1/new/blackjack.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1054.949 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1054.949 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1054.949 ; gain = 25.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1054.949 ; gain = 25.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1054.949 ; gain = 25.594
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'ControlUnit'
+WARNING: [Synth 8-327] inferring latch for variable 'zero_reg' [C:/Users/danny/BlackJack-VHDL/DataPath.vhd:182]
+WARNING: [Synth 8-327] inferring latch for variable 'perdida_reg' [C:/Users/danny/BlackJack-VHDL/DataPath.vhd:189]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [C:/Users/danny/BlackJack-VHDL/ControlUnit.vhd:85]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [C:/Users/danny/BlackJack-VHDL/ControlUnit.vhd:85]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                               00 |                               00
+                      s1 |                               01 |                               01
+                      s2 |                               10 |                               10
+                      s3 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'ControlUnit'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [C:/Users/danny/BlackJack-VHDL/ControlUnit.vhd:85]
+WARNING: [Synth 8-327] inferring latch for variable 'maquina_lista_reg' [C:/Users/danny/BlackJack-VHDL/ControlUnit.vhd:79]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1054.949 ; gain = 25.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---RAMs : 
+	              256 Bit	(64 X 4 bit)          RAMs := 1     
++---Muxes : 
+	   4 Input    9 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 3     
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1054.949 ; gain = 25.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+-----------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object            | Inference | Size (Depth x Width) | Primitives    | 
++------------+-----------------------+-----------+----------------------+---------------+
+|BlackJack   | DATAPATHH/RAM/RAM_reg | Implied   | 64 x 4               | RAM64X1S x 4	 | 
++------------+-----------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1054.949 ; gain = 25.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1054.949 ; gain = 25.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+-----------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object            | Inference | Size (Depth x Width) | Primitives    | 
++------------+-----------------------+-----------+----------------------+---------------+
+|BlackJack   | DATAPATHH/RAM/RAM_reg | Implied   | 64 x 4               | RAM64X1S x 4	 | 
++------------+-----------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1072.320 ; gain = 42.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1077.117 ; gain = 47.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1077.117 ; gain = 47.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1077.117 ; gain = 47.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1077.117 ; gain = 47.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1077.117 ; gain = 47.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1077.117 ; gain = 47.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |LUT1     |     3|
+|3     |LUT2     |     7|
+|4     |LUT3     |     3|
+|5     |LUT4     |    18|
+|6     |LUT5     |     4|
+|7     |LUT6     |     7|
+|8     |RAM64X1S |     4|
+|9     |FDCE     |    14|
+|10    |FDRE     |    10|
+|11    |IBUF     |     5|
+|12    |OBUF     |    24|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1077.117 ; gain = 47.762
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1077.117 ; gain = 22.168
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1077.117 ; gain = 47.762
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1089.230 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1094.465 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  RAM64X1S => RAM64X1S (RAMS64E): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1094.465 ; gain = 65.109
+INFO: [Common 17-1381] The checkpoint 'C:/Users/danny/CPE487/Blackjack/Blackjack.runs/synth_1/BlackJack.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file BlackJack_utilization_synth.rpt -pb BlackJack_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 15 15:39:32 2020...
